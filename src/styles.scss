@@ -1,0 +1,21 @@
+
+:root {
+  --color-primary: #ff0011;
+  --color-secondary:  #760033;
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #f5f5f5;
+}
+
+[disabled],
+.mat-button-disabled {
+  cursor: not-allowed;
+}
+
+.page-title {
+  padding: 1rem;
+}

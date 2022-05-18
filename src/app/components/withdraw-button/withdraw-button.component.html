@@ -1,0 +1,10 @@
+<ng-container [ngSwitch]="(allowedTo$ | async)?.result">
+  <ng-container  *ngSwitchCase="true">
+    <button mat-raised-button color="primary" (click)="submit()">Withdraw</button>
+  </ng-container>
+  <ng-container *ngSwitchDefault>
+    <div>
+      <button mat-raised-button class="mat-button-disabled" (click)="blockAction()">Withdraw</button>
+    </div>
+  </ng-container>
+</ng-container>
